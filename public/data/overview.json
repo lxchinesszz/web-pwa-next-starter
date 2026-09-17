@@ -1,0 +1,46 @@
+{
+  "app": {
+    "tagline": "Next.js + Tailwind CSS + shadcn/ui + Motion，开箱即用的移动端 PWA 骨架。",
+    "version": "0.1.0",
+    "updatedAt": "2026-03-01"
+  },
+  "stats": [
+    { "label": "页面", "value": "6", "hint": "含离线兜底页" },
+    { "label": "组件", "value": "27", "hint": "shadcn/ui 源码内置" },
+    { "label": "Lighthouse", "value": "98", "hint": "PWA 可安装项满分" },
+    { "label": "首屏 JS", "value": "~120 KB", "hint": "gzip 后" }
+  ],
+  "checklist": [
+    { "title": "应用外壳", "detail": "吸顶头部、底部标签栏、安全区适配", "done": true },
+    { "title": "设计系统", "detail": "Tailwind v4 主题变量 + 明暗双色板", "done": true },
+    { "title": "静态数据层", "detail": "public/data 下的 JSON + zod 校验 + 统一访问层", "done": true },
+    { "title": "PWA 能力", "detail": "安装引导、离线兜底、更新提示", "done": true },
+    { "title": "接入真实接口", "detail": "替换 lib/data/endpoints.ts 即可", "done": false }
+  ],
+  "capabilities": [
+    {
+      "id": "next",
+      "title": "App Router + Turbopack",
+      "detail": "服务端组件为默认，交互组件按需 'use client'，构建走 Turbopack。",
+      "badge": "Next 16"
+    },
+    {
+      "id": "tailwind",
+      "title": "Tailwind v4 主题变量",
+      "detail": "配色、圆角全部走 CSS 变量，改一处即可换肤，无需 tailwind.config。",
+      "badge": "Tailwind 4"
+    },
+    {
+      "id": "shadcn",
+      "title": "shadcn/ui 组件源码",
+      "detail": "组件文件直接放在 src/components/ui，可读可改，也能继续用 CLI 追加。",
+      "badge": "shadcn/ui"
+    },
+    {
+      "id": "motion",
+      "title": "Motion 动效",
+      "detail": "标签栏滑动高亮、列表错峰入场、桌面抽屉手势，全部尊重「减弱动态效果」。",
+      "badge": "Motion 13"
+    }
+  ]
+}

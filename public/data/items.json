@@ -1,0 +1,106 @@
+{
+  "updatedAt": "2026-03-01T09:30:00.000Z",
+  "total": 10,
+  "items": [
+    {
+      "id": "app-router",
+      "title": "App Router 目录约定",
+      "summary": "layout / page / manifest / route 四类约定文件各司其职，元数据由 app.config.ts 统一产出。",
+      "category": "framework",
+      "status": "stable",
+      "tags": ["next", "routing"],
+      "score": 96,
+      "updatedAt": "2026-02-18"
+    },
+    {
+      "id": "server-components",
+      "title": "服务端组件优先",
+      "summary": "页面默认是服务端组件，只有需要浏览器 API 的部分才加 'use client'。",
+      "category": "framework",
+      "status": "stable",
+      "tags": ["rsc", "performance"],
+      "score": 92,
+      "updatedAt": "2026-02-19"
+    },
+    {
+      "id": "theme-tokens",
+      "title": "CSS 变量主题",
+      "summary": "品牌色、圆角、明暗两套色板集中在 globals.css，切换深色不需要重渲染。",
+      "category": "style",
+      "status": "stable",
+      "tags": ["tailwind", "dark-mode"],
+      "score": 89,
+      "updatedAt": "2026-02-20"
+    },
+    {
+      "id": "safe-area",
+      "title": "安全区适配",
+      "summary": "pt-safe / pb-safe 两个工具类处理刘海屏与 Home Indicator，底部标签栏不再被遮挡。",
+      "category": "style",
+      "status": "stable",
+      "tags": ["mobile", "css"],
+      "score": 87,
+      "updatedAt": "2026-02-21"
+    },
+    {
+      "id": "service-worker",
+      "title": "Service Worker 构建",
+      "summary": "Serwist 在构建期用 esbuild 打包 src/sw.ts，产出静态的 /serwist/sw.js。",
+      "category": "pwa",
+      "status": "stable",
+      "tags": ["serwist", "workbox"],
+      "score": 94,
+      "updatedAt": "2026-02-22"
+    },
+    {
+      "id": "offline-fallback",
+      "title": "离线兜底页",
+      "summary": "导航请求失败时回退到预缓存的 /offline，而不是浏览器的恐龙页。",
+      "category": "pwa",
+      "status": "stable",
+      "tags": ["offline", "precache"],
+      "score": 90,
+      "updatedAt": "2026-02-23"
+    },
+    {
+      "id": "update-flow",
+      "title": "更新提示流程",
+      "summary": "新版本停在 waiting，由用户点「立即更新」触发 skipWaiting，避免打断填写。",
+      "category": "pwa",
+      "status": "beta",
+      "tags": ["sw-update", "ux"],
+      "score": 84,
+      "updatedAt": "2026-02-24"
+    },
+    {
+      "id": "list-stagger",
+      "title": "列表错峰入场",
+      "summary": "Motion 的 stagger 让卡片依次浮现，比整块出现更容易感知层级。",
+      "category": "motion",
+      "status": "stable",
+      "tags": ["animation", "list"],
+      "score": 82,
+      "updatedAt": "2026-02-25"
+    },
+    {
+      "id": "drawer-gesture",
+      "title": "抽屉手势",
+      "summary": "vaul 提供跟随手指的拖拽与回弹，桌面端与移动端共用一套组件。",
+      "category": "motion",
+      "status": "stable",
+      "tags": ["gesture", "drawer"],
+      "score": 88,
+      "updatedAt": "2026-02-26"
+    },
+    {
+      "id": "view-transition",
+      "title": "页面切换过渡",
+      "summary": "预留方案：接 React 的 View Transition，替换现在的入场动画，减少长列表的布局抖动。",
+      "category": "motion",
+      "status": "planned",
+      "tags": ["view-transition", "experiment"],
+      "score": 60,
+      "updatedAt": "2026-02-27"
+    }
+  ]
+}

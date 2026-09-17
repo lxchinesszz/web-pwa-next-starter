@@ -1,0 +1,17 @@
+# 与 web-pwa-starter 保持一致的 pnpm 约定：同一台机器上的所有应用共享 store，
+# 升级 Next 或增删依赖时不会重复下载同一份包。
+storeDir: ~/.pnpm-store
+verifyDepsBeforeRun: false
+confirmModulesPurge: false
+
+# Next 16 的可选原生依赖，模板里用不到它们的构建脚本。
+allowBuilds:
+  # @serwist/turbopack 声明了它但代码里并没有 import，跳过原生二进制下载。
+  '@swc/core': false
+  sharp: false
+  unrs-resolver: false
+
+minimumReleaseAgeExclude:
+  - framer-motion@13.4.0
+  - lucide-react@1.47.0
+  - motion@13.4.0

@@ -1,0 +1,47 @@
+{
+  "updatedAt": "2026-03-01T09:30:00.000Z",
+  "range": { "label": "近 7 天", "days": 7 },
+  "metrics": [
+    { "label": "安装量", "value": 1284, "unit": "次", "target": 1500, "trend": "up" },
+    { "label": "离线访问占比", "value": 18, "unit": "%", "target": 25, "trend": "up" },
+    { "label": "首屏 LCP", "value": 1240, "unit": "ms", "target": 2000, "trend": "down" },
+    { "label": "缓存命中率", "value": 76, "unit": "%", "target": 80, "trend": "flat" }
+  ],
+  "events": [
+    {
+      "id": "evt-1",
+      "title": "生产构建完成",
+      "detail": "预缓存 42 个条目，总体积 1.8 MiB",
+      "time": "今天 09:30",
+      "type": "build"
+    },
+    {
+      "id": "evt-2",
+      "title": "发布 v0.1.0",
+      "detail": "模板首次发布，包含 5 个演示页面",
+      "time": "昨天 18:04",
+      "type": "release"
+    },
+    {
+      "id": "evt-3",
+      "title": "静态数据同步",
+      "detail": "overview / items / activity 三份 JSON 已更新",
+      "time": "昨天 17:52",
+      "type": "sync"
+    },
+    {
+      "id": "evt-4",
+      "title": "缓存体积告警",
+      "detail": "static-image-assets 达到预设上限的 80%",
+      "time": "2 天前 11:20",
+      "type": "alert"
+    },
+    {
+      "id": "evt-5",
+      "title": "Service Worker 更新",
+      "detail": "离线兜底页 revision 已刷新",
+      "time": "3 天前 08:15",
+      "type": "build"
+    }
+  ]
+}
