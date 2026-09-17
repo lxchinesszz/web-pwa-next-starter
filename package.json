@@ -4,6 +4,9 @@
   "private": true,
   "packageManager": "pnpm@11.9.0",
   "type": "module",
+  "bin": {
+    "create-pwa-next": "./bin/create-pwa-next.mjs"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
