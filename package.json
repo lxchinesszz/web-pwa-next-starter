@@ -9,7 +9,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "size:out": "node scripts/out-size.mjs",
+    "build": "next build && pnpm run size:out",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
